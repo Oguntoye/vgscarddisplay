@@ -35,7 +35,7 @@
             const cvv2iframe = show.request({
                 name: "data-text",
                 method: "GET",
-                path: "/cards/" + cardId + "/secure-data/cvv2",
+                path: "/cards/" + rcardid + "/secure-data/cvv2",
                 headers: {
                     Authorization: "Bearer " + cardToken,
                 },
@@ -47,7 +47,7 @@
             const cardNumberIframe = show.request({
                 name: "data-text",
                 method: "GET",
-                path: "/cards/" + cardId + "/secure-data/number",
+                path: "/cards/" + rcardid + "/secure-data/number",
                 headers: {
                     Authorization: "Bearer " + cardToken,
                 },
@@ -59,7 +59,7 @@
             const pinIframe = show.request({
                 name: "data-text",
                 method: "GET",
-                path: "/cards/" + cardId + "/secure-data/defaultPin",
+                path: "/cards/" + rcardid + "/secure-data/defaultPin",
                 headers: {
                     Authorization: "Bearer " + cardToken,
                 },
